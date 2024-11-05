@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Desafio 3</h1>
+    <p>Digite a próxima senha para continuar:</p>
+    <input type="string" id="senha" placeholder="Digite a senha">
+    <button onclick="verificarSenha()">Entrar</button>
+
+    <script>
+        function verificarSenha() {
+            const senha = document.getElementById('senha').value;
+            if (senha === "teste") { // Troque "segundasenha" pela senha que desejar
+                window.location.href = "pagina4.html";
+            } else {
+                alert("Senha incorreta. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
