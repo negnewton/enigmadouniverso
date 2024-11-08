@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 1</title>
+    <title>Enigma do Universo</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Desafio 1</h1>
+    <h1>Desafio 1</h1>
+    <p>No início de tudo, quando o universo era apenas um ponto singular, explodiu a centelha primordial, o Big Bang, dando origem ao tempo, ao espaço e ao infinito. Daquele instante surgiu o cosmos em expansão, levando consigo a promessa de mistérios sem fim, cada estrela e cada galáxia carregando fragmentos dessa criação. Mas a chave que procuras, explorador, não está em galáxias distantes. Está próxima, oculta sob um véu de silêncio, sob o sino da capela. Ali, onde o tempo ecoa nas badaladas e o som vibra em memórias antigas, encontrarás o próximo segredo. Ouça com atenção, pois o início de tudo também ressoa nos lugares mais tranquilos.</p>
     <p>Digite a senha para continuar:</p>
     <input type="string" id="senha" placeholder="Digite a senha">
     <button onclick="verificarSenha()">Entrar</button>
 
     <script>
         function verificarSenha() {
-            const senha = document.getElementById('senha').value;
-            if (senha === "primeirasenha") { // Troque "primeirasenha" pela senha que desejar
+            const senha = document.getElementById('senha').value.toLowerCase();
+            if (senha === "senha") { // Troque "primeirasenha" pela senha que desejar
                 window.location.href = "pagina2.html";
             } else {
                 alert("Senha incorreta. Tente novamente.");

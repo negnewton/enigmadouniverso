@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 3</title>
+    <title>Enigma do Universo</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Desafio 3</h1>
-    <p>Digite a próxima senha para continuar:</p>
+    <h1>Desafio 3</h1>
+    <p>Nos confins do sistema solar, onde planetas giram em harmonia ao redor do astro que lhes dá vida, cada órbita guarda um segredo, cada volta ao redor do Sol traz uma nova revelação. Mas para a próxima chave do teu enigma, não é preciso viajar tão longe. Procure no andar mais próximo ao céu. Ali, onde se plantam as primeiras sementes da curiosidade, encontrarás a próxima peça do mistério. Olhe bem; assim como os planetas se escondem no céu, o que buscas pode estar oculto aos olhos apressados.</p>
     <input type="string" id="senha" placeholder="Digite a senha">
     <button onclick="verificarSenha()">Entrar</button>
 
     <script>
         function verificarSenha() {
-            const senha = document.getElementById('senha').value;
-            if (senha === "teste") { // Troque "segundasenha" pela senha que desejar
+            const senha = document.getElementById('senha').value.toLowerCase();
+            if (senha === "solar") { // Troque "segundasenha" pela senha que desejar
                 window.location.href = "pagina4.html";
             } else {
                 alert("Senha incorreta. Tente novamente.");

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 2</title>
+    <title>Enigma do Universo</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Desafio 2</h1>
-    <p>Digite a próxima senha para continuar:</p>
+    <h1>Desafio 2</h1>
+    <p>Nas profundezas do universo, onde galáxias dançam em espirais luminosas e o mistério se estende em vastas escuridões, há segredos que se entrelaçam com o brilho das estrelas. Para desvendar o próximo enigma, porém, não é preciso olhar tão longe. Dirija-se ao final do corredor, aquele que se estende em linha reta à frente da escada do segundo andar. Ali, onde o espaço parece se estreitar e as sombras se acumulam, repousa a chave que procuras. Observe com atenção; às vezes, é no fim de um caminho estreito que os mistérios mais amplos se revelam.</p>
     <input type="string" id="senha" placeholder="Digite a senha">
     <button onclick="verificarSenha()">Entrar</button>
 
     <script>
         function verificarSenha() {
-            const senha = document.getElementById('senha').value;
-            if (senha === "segundasenha") { // Troque "segundasenha" pela senha que desejar
+            const senha = document.getElementById('senha').value.toLowerCase();
+            if (senha === "eei") { // Troque "segundasenha" pela senha que desejar
                 window.location.href = "pagina3.html";
             } else {
                 alert("Senha incorreta. Tente novamente.");

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 4</title>
+    <title>Enigma do Universo</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Desafio 4</h1>
-    <p>Digite a próxima senha para continuar:</p>
+    <h1>Desafio 4</h1>
+    <p>No planeta Terra, um pequeno ponto azul no vasto cosmos, cada detalhe guarda um segredo da vida, da matéria e do tempo. Dos oceanos profundos às florestas densas, tudo é parte de um grande enigma que pulsa e respira. Mas, para desvendar a próxima pista, não precisas olhar tão longe. Caminha até o local onde o conhecimento e a ciência buscam decifrar o próprio coração deste planeta. Ali, entre frascos, tubos e curiosidade, repousa a próxima chave que procuras. Olha com atenção e paciência – às vezes, é nos menores detalhes que se encontram os maiores mistérios da Terra.</p>
     <input type="string" id="senha" placeholder="Digite a senha">
     <button onclick="verificarSenha()">Entrar</button>
 
     <script>
         function verificarSenha() {
-            const senha = document.getElementById('senha').value;
-            if (senha === "teste") { // Troque "segundasenha" pela senha que desejar
+            const senha = document.getElementById('senha').value.toLowerCase();
+            if (senha === "terra") { // Troque "segundasenha" pela senha que desejar
                 window.location.href = "paginafinal.html";
             } else {
                 alert("Senha incorreta. Tente novamente.");
